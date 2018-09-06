@@ -1,0 +1,17 @@
+<h2>COUNT PAGE</h2>
+<a href="{% url 'home' %}">back to homepage</a>
+<h3>original</h3>
+{{ fulltext }}
+<h3>lentgh</h3>
+{{ length }}
+
+<h1>Word Count:</h1>
+
+{% for word, counttotal in sortedwords %}
+{{ word }} -- {{ counttotal }}
+
+<br>
+
+{% endfor %}
+
+{{ sortedwords }}
